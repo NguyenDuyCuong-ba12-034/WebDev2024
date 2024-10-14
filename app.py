@@ -153,7 +153,5 @@ def logout():
     session.pop('user', None)  # Xóa thông tin người dùng khỏi session
     flash('You have been logged out.')  # Thông báo đăng xuất
     return redirect(url_for('index'))  # Chuyển hướng về trang index
-
-
 if __name__ == '__main__':
     app.run(debug=True)
